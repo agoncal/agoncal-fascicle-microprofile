@@ -11,10 +11,21 @@
 
   <modules>
     <module>advanced</module>
+    <module>cdi</module>
+    <module>config</module>
+    <module>fault-tolerance</module>
     <module>first-step</module>
     <module>getting-started</module>
+    <module>health</module>
     <module>integrating</module>
+    <module>jaxrs</module>
+    <module>jsonb</module>
+    <module>jsonp</module>
+    <module>jwt</module>
+    <module>metrics</module>
+    <module>open-api</module>
     <module>putting-together</module>
+    <module>rest-client</module>
     <module>understanding</module>
   </modules>
 
