@@ -1,4 +1,4 @@
-# tag::adocHeader[]
+# tag::adocSnippet[]
 openapi: 3.0.1
 info:
   title: Generated API
@@ -23,4 +23,4 @@ paths:
           description: OK
           content:
             text/plain: {}
-# end::adocHeader[]
+# end::adocSnippet[]
