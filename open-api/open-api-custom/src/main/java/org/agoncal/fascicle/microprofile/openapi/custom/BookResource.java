@@ -11,7 +11,6 @@ import org.eclipse.microprofile.openapi.annotations.tags.Tag;
 import org.jboss.logging.Logger;
 
 import javax.inject.Inject;
-import javax.validation.Valid;
 import javax.ws.rs.Consumes;
 import javax.ws.rs.DELETE;
 import javax.ws.rs.GET;
@@ -30,6 +29,7 @@ import java.util.Optional;
 
 import static javax.ws.rs.core.MediaType.APPLICATION_JSON;
 import static javax.ws.rs.core.MediaType.TEXT_PLAIN;
+import static javax.ws.rs.core.Response.Status.NOT_FOUND;
 
 @Path("/api/books")
 @Produces(APPLICATION_JSON)
@@ -37,25 +37,32 @@ import static javax.ws.rs.core.MediaType.TEXT_PLAIN;
 @Tag(name = "Book Endpoint")
 public class BookResource {
 
+  @Inject
   BookService service;
 
   private static final Logger LOGGER = Logger.getLogger(BookResource.class);
 
-  @Operation(summary = "Returns a random book")
-  @APIResponse(responseCode = "200", content = @Content(mediaType = APPLICATION_JSON, schema = @Schema(implementation = Book.class, required = true)))
+  // tag::adocOperation[]
   @GET
   @Path("/random")
+  @Operation(
+    summary = "Returns a random book",
+    description = "Each time this API is invoked, a random book is returned from the database"
+  )
   public Response getRandomBook() {
+  // end::adocOperation[]
     Book book = service.findRandomBook();
     LOGGER.debug("Found random book " + book);
     return Response.ok(book).build();
   }
 
+  // tag::adocResponse[]
+  @GET
   @Operation(summary = "Returns all the books from the database")
   @APIResponse(responseCode = "200", content = @Content(mediaType = APPLICATION_JSON, schema = @Schema(implementation = Book.class, type = SchemaType.ARRAY)))
   @APIResponse(responseCode = "204", description = "No books")
-  @GET
   public Response getAllBooks() {
+  // end::adocResponse[]
     List<Book> books = service.findAllBooks();
     LOGGER.debug("Total number of books " + books);
     return Response.ok(books).build();
@@ -63,24 +70,28 @@ public class BookResource {
 
   @Operation(summary = "Returns a book for a given identifier")
   @APIResponse(responseCode = "200", content = @Content(mediaType = APPLICATION_JSON, schema = @Schema(implementation = Book.class)))
-  @APIResponse(responseCode = "204", description = "The book is not found for a given identifier")
+  @APIResponse(responseCode = "404", description = "The book is not found for a given identifier")
+  // tag::adocParameter[]
   @GET
   @Path("/{id}")
   public Response getBook(@Parameter(description = "Book identifier", required = true) @PathParam("id") Long id) {
+  // end::adocParameter[]
     Optional<Book> book = service.findBookById(id);
     if (book.isPresent()) {
       LOGGER.debug("Found book " + book);
       return Response.ok(book).build();
     } else {
       LOGGER.debug("No book found with id " + id);
-      return Response.noContent().build();
+      return Response.status(NOT_FOUND).build();
     }
   }
 
-  @Operation(summary = "Creates a valid book")
+  @Operation(summary = "Creates a book")
   @APIResponse(responseCode = "201", description = "The URI of the created book", content = @Content(mediaType = APPLICATION_JSON, schema = @Schema(implementation = URI.class)))
+  // tag::adocRequestBody[]
   @POST
-  public Response createBook(@RequestBody(required = true, content = @Content(mediaType = APPLICATION_JSON, schema = @Schema(implementation = Book.class))) @Valid Book book, @Context UriInfo uriInfo) {
+  public Response createBook(@RequestBody(required = true, content = @Content(mediaType = APPLICATION_JSON, schema = @Schema(implementation = Book.class))) Book book, @Context UriInfo uriInfo) {
+  // end::adocRequestBody[]
     book = service.persistBook(book);
     UriBuilder builder = uriInfo.getAbsolutePathBuilder().path(Long.toString(book.id));
     LOGGER.debug("New book created with URI " + builder.build().toString());
@@ -90,7 +101,7 @@ public class BookResource {
   @Operation(summary = "Updates an exiting  book")
   @APIResponse(responseCode = "200", description = "The updated book", content = @Content(mediaType = APPLICATION_JSON, schema = @Schema(implementation = Book.class)))
   @PUT
-  public Response updateBook(@RequestBody(required = true, content = @Content(mediaType = APPLICATION_JSON, schema = @Schema(implementation = Book.class))) @Valid Book book) {
+  public Response updateBook(@RequestBody(required = true, content = @Content(mediaType = APPLICATION_JSON, schema = @Schema(implementation = Book.class))) Book book) {
     book = service.updateBook(book);
     LOGGER.debug("Book updated with new valued " + book);
     return Response.ok(book).build();

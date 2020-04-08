@@ -1,10 +1,10 @@
 package org.agoncal.fascicle.microprofile.openapi.custom;
 
-import org.jboss.logging.Logger;
-
+import javax.enterprise.context.ApplicationScoped;
 import java.util.List;
 import java.util.Optional;
 
+@ApplicationScoped
 public class BookService {
 
   public Book persistBook(Book book) {
