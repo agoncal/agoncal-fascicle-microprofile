@@ -18,6 +18,7 @@
 
   <modules>
     <module>open-api-config</module>
+    <module>open-api-custom</module>
     <module>open-api-default</module>
     <module>open-api-first-step</module>
   </modules>
