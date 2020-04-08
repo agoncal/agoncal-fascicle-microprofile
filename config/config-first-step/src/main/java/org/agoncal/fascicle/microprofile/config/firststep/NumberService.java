@@ -2,16 +2,11 @@ package org.agoncal.fascicle.microprofile.config.firststep;
 
 import org.eclipse.microprofile.config.inject.ConfigProperty;
 
-import javax.ws.rs.GET;
-import javax.ws.rs.Path;
-import javax.ws.rs.Produces;
-import javax.ws.rs.core.MediaType;
-import javax.ws.rs.core.Response;
+import javax.enterprise.context.ApplicationScoped;
 
 // tag::adocSnippet[]
-@Path("/numbers")
-@Produces(MediaType.TEXT_PLAIN)
-public class NumberResource {
+@ApplicationScoped
+public class NumberService {
 
   @ConfigProperty(name = "country.code", defaultValue = "us")
   String countryCode;
@@ -19,20 +14,17 @@ public class NumberResource {
   @ConfigProperty(name = "book.prefix")
   int bookPrefix;
 
-  @GET()
-  @Path("/book")
   public String generateBookNumber() {
     return bookPrefix + generateNumber() + countryCode;
   }
 
-  @GET()
-  @Path("/cd")
-  public Response generateCDNumber() {
-    return Response.ok(generateNumber() + countryCode).build();
+  public String generateCDNumber() {
+    return generateNumber() + countryCode;
   }
   // tag::adocSkip[]
+
   private String generateNumber() {
-    return String.valueOf(Math.random() + "-");
+    return Math.random() + "-";
   }
   // tag::adocSkip[]
 }
