@@ -9,6 +9,7 @@ import org.eclipse.microprofile.openapi.annotations.servers.ServerVariable;
 import org.eclipse.microprofile.openapi.annotations.tags.Tag;
 
 import javax.ws.rs.ApplicationPath;
+import javax.ws.rs.core.Application;
 
 // tag::adocInfo[]
 @ApplicationPath("/")
@@ -39,6 +40,6 @@ import javax.ws.rs.ApplicationPath;
   )
 // end::adocServer[]
 )
-public class BookApplication {
+public class BookApplication extends Application {
 }
 // end::adocSnippet[]

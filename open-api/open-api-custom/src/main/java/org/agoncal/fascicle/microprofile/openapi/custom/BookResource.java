@@ -34,7 +34,6 @@ import static javax.ws.rs.core.Response.Status.NOT_FOUND;
 @Path("/api/books")
 @Produces(APPLICATION_JSON)
 @Consumes(APPLICATION_JSON)
-@Tag(name = "Book Endpoint")
 public class BookResource {
 
   @Inject
@@ -49,6 +48,7 @@ public class BookResource {
     summary = "Returns a random book",
     description = "Each time this API is invoked, a random book is returned from the database"
   )
+  @Tag(name = "BETA", description = "This API is still in BETA. Use carefully")
   public Response getRandomBook() {
   // end::adocOperation[]
     Book book = service.findRandomBook();

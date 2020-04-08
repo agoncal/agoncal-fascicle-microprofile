@@ -4,7 +4,7 @@ import org.eclipse.microprofile.openapi.annotations.media.Schema;
 
 import java.math.BigDecimal;
 
-// tag::adocSnippet[]
+// tag::adocSchema[]
 @Schema(name = "Book", description = "Book representation")
 public class Book {
 
@@ -18,3 +18,4 @@ public class Book {
   public BigDecimal price;
   public String description;
 }
+// end::adocSchema[]
