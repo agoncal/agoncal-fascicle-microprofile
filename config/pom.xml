@@ -18,6 +18,7 @@
 
   <modules>
     <module>config-first-step</module>
+    <module>config-injection-programmatic</module>
   </modules>
 
 </project>
