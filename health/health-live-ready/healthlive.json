@@ -1,13 +1,12 @@
-
 {
-    "status": "UP",
-    "checks": [
-        {
-            "name": "DiskCheckLiveness",
-            "status": "UP",
-            "data": {
-                "remainingSpace": 82326
-            }
-        }
-    ]
+  "status": "UP",
+  "checks": [
+    {
+      "name": "DiskCheckLiveness",
+      "status": "UP",
+      "data": {
+        "remainingSpace": 82315
+      }
+    }
+  ]
 }
