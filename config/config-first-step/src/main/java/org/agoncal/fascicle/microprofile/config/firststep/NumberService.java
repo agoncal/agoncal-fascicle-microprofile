@@ -3,14 +3,17 @@ package org.agoncal.fascicle.microprofile.config.firststep;
 import org.eclipse.microprofile.config.inject.ConfigProperty;
 
 import javax.enterprise.context.ApplicationScoped;
+import javax.inject.Inject;
 
 // tag::adocSnippet[]
 @ApplicationScoped
 public class NumberService {
 
+  @Inject
   @ConfigProperty(name = "country.code", defaultValue = "us")
   String countryCode;
 
+  @Inject
   @ConfigProperty(name = "book.prefix")
   int bookPrefix;
 

@@ -2,6 +2,7 @@ package org.agoncal.fascicle.microprofile.config.injection;
 
 import org.eclipse.microprofile.config.inject.ConfigProperty;
 
+import javax.inject.Inject;
 import javax.inject.Singleton;
 
 /**
@@ -14,16 +15,21 @@ import javax.inject.Singleton;
 public class Invoice {
 
   Float subtotal;
+  @Inject
   @ConfigProperty(name = "invoice.vatRate", defaultValue = "10")
   Float vatRate;
   Float vatAmount;
   Float total;
+  @Inject
   @ConfigProperty(name = "invoice.allowsDiscount", defaultValue = "true")
   Boolean allowsDiscount;
+  @Inject
   @ConfigProperty(name = "invoice.discountRate", defaultValue = "2.5")
   Float discountRate;
+  @Inject
   @ConfigProperty(name = "invoice.terms")
   String terms;
+  @Inject
   @ConfigProperty(name = "invoice.penalties")
   String penalties;
 }
