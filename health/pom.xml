@@ -16,4 +16,8 @@
     <version>1.0</version>
   </parent>
 
+  <modules>
+    <module>health-first-step</module>
+  </modules>
+
 </project>
