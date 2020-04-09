@@ -1,0 +1,17 @@
+{
+  "memory.usedHeap": 110611456,
+  "memory.committedHeap": 334495744,
+  "memory.maxHeap": 4294967296,
+  "gc.total;name=G1 Young Generation": 8,
+  "gc.total;name=G1 Old Generation": 0,
+  "gc.time;name=G1 Old Generation": 0,
+  "gc.time;name=G1 Young Generation": 59,
+  "jvm.uptime": 2465249,
+  "thread.count": 53,
+  "thread.daemon.count": 9,
+  "thread.max.count": 131,
+  "classloader.loadedClasses.count": 8240,
+  "classloader.loadedClasses.total": 8240,
+  "classloader.unloadedClasses.total": 0,
+  "cpu.availableProcessors": 8
+}
