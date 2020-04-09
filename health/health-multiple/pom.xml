@@ -4,9 +4,9 @@
   <modelVersion>4.0.0</modelVersion>
 
   <groupId>org.agoncal.fascicle.microprofile.health</groupId>
-  <artifactId>health-first-step</artifactId>
+  <artifactId>health-multiple</artifactId>
   <version>1.0</version>
-  <name>MicroProfile :: Health :: First Step</name>
+  <name>MicroProfile :: Health :: Multiple</name>
 
   <parent>
     <groupId>org.agoncal.fascicle.microprofile</groupId>

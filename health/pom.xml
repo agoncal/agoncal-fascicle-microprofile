@@ -18,6 +18,8 @@
 
   <modules>
     <module>health-first-step</module>
+    <module>health-live-ready</module>
+    <module>health-multiple</module>
   </modules>
 
 </project>

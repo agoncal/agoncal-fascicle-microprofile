@@ -9,7 +9,7 @@ import javax.enterprise.context.ApplicationScoped;
 // tag::adocSnippet[]
 @Liveness
 @ApplicationScoped
-public class PingResourceHealthCheck implements HealthCheck {
+public class PingResourceCheck implements HealthCheck {
 
   @Override
   public HealthCheckResponse call() {
