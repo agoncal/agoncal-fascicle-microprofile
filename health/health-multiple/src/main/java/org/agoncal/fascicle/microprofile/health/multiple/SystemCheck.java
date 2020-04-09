@@ -9,6 +9,7 @@ import javax.enterprise.context.ApplicationScoped;
 import java.lang.management.ManagementFactory;
 import java.lang.management.MemoryMXBean;
 
+// tag::adocSnippet[]
 @Liveness
 @Readiness
 @ApplicationScoped
@@ -27,3 +28,4 @@ public class SystemCheck implements HealthCheck {
       .state(memUsed < memMax * 0.9).build();
   }
 }
+// end::adocSnippet[]

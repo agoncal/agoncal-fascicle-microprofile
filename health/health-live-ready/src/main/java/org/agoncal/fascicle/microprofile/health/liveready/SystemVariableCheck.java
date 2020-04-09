@@ -16,12 +16,15 @@ public class SystemVariableCheck implements HealthCheck {
     if (System.getProperty("server.name") == null) {
       return HealthCheckResponse
         .named(SystemVariableCheck.class.getSimpleName() + "Readiness")
-        .withData("server", "not available").down()
+        .withData("server", "not available")
+        .down()
         .build();
     }
     return HealthCheckResponse
       .named(SystemVariableCheck.class.getSimpleName() + "Readiness")
-      .withData("default server", "available").up().build();
+      .withData("default server", "available")
+      .up()
+      .build();
   }
 }
 // end::adocSnippet[]

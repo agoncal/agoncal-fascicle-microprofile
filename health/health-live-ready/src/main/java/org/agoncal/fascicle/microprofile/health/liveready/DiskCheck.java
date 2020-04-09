@@ -7,6 +7,7 @@ import org.eclipse.microprofile.health.Liveness;
 import javax.enterprise.context.ApplicationScoped;
 import java.io.File;
 
+// tag::adocSnippet[]
 @Liveness
 @ApplicationScoped
 public class DiskCheck implements HealthCheck {
@@ -24,3 +25,4 @@ public class DiskCheck implements HealthCheck {
       .build();
   }
 }
+// end::adocSnippet[]
