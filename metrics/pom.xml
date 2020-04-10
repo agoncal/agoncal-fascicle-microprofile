@@ -17,6 +17,7 @@
   </parent>
 
   <modules>
+    <module>metrics-application</module>
     <module>metrics-first-step</module>
   </modules>
 
