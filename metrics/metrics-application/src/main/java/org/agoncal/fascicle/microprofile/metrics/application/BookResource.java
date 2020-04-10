@@ -33,7 +33,7 @@ public class BookResource {
   /**
    * curl http://localhost:8080/books/random
    */
-  // tag:adocTimed[]
+  // tag::adocTimed[]
   @GET
   @Path("/random")
   @Counted(name = "countGetRandomBook",
@@ -45,12 +45,12 @@ public class BookResource {
     Book book = service.findRandomBook();
     return Response.ok(book).build();
   }
-  // end:adocTimed[]
+  // end::adocTimed[]
 
   /**
    * curl http://localhost:8080/books
    */
-  // tag:adocGauge[]
+  // tag::adocGauge[]
   @GET
   @Gauge(name = "gaugeCountAllBooks",
     description = "Instantaneous time of the countAllBooks method",
@@ -58,12 +58,12 @@ public class BookResource {
   public Long countAllBooks() {
     return service.countAllBooks();
   }
-  // end:adocGauge[]
+  // end::adocGauge[]
 
   /**
    * curl http://localhost:8080/books/1234
    */
-  // tag:adocMetered[]
+  // tag::adocMetered[]
   @GET
   @Path("/{id}")
   @Metered(name = "meteredGetBook",
@@ -76,5 +76,5 @@ public class BookResource {
       return Response.status(NOT_FOUND).build();
     }
   }
-  // end:adocMetered[]
+  // end::adocMetered[]
 }
