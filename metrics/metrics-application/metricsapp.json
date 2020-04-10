@@ -1,0 +1,28 @@
+{
+  "BookResource.timeGetRandomBook": {
+    "p99": 0.079138,
+    "min": 0.015722,
+    "max": 0.079138,
+    "mean": 0.036734565033058185,
+    "p50": 0.015975,
+    "p999": 0.079138,
+    "stddev": 0.02975989955826608,
+    "p95": 0.079138,
+    "p98": 0.079138,
+    "p75": 0.079138,
+    "fiveMinRate": 0.3700345286214965,
+    "fifteenMinRate": 0.5107184930123668,
+    "meanRate": 0.01975860106189693,
+    "count": 3,
+    "oneMinRate": 0.05353111044555613
+  },
+  "BookResource.countGetRandomBook": 3,
+  "BookResource.meteredGetBook": {
+    "fiveMinRate": 0.01572243946909627,
+    "fifteenMinRate": 0.005448581337016948,
+    "meanRate": 0.032929913463041,
+    "count": 5,
+    "oneMinRate": 0.06226947249761561
+  },
+  "BookResource.gaugeCountAllBooks": -621777723394620587
+}
