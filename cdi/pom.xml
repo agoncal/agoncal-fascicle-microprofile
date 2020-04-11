@@ -18,5 +18,7 @@
 
   <modules>
     <module>cdi-first-step</module>
+    <module>cdi-injection</module>
+    <module>cdi-injection-default</module>
   </modules>
 </project>

@@ -4,9 +4,9 @@
   <modelVersion>4.0.0</modelVersion>
 
   <groupId>org.agoncal.fascicle.microprofile.cdi</groupId>
-  <artifactId>cdi-first-step</artifactId>
+  <artifactId>cdi-injection-default</artifactId>
   <version>1.0</version>
-  <name>MicroProfile :: CDI :: First Step</name>
+  <name>MicroProfile :: CDI :: Default Injection</name>
 
   <parent>
     <groupId>org.agoncal.fascicle.microprofile</groupId>
