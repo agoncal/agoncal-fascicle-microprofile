@@ -20,5 +20,6 @@
     <module>cdi-first-step</module>
     <module>cdi-injection</module>
     <module>cdi-injection-default</module>
+    <module>cdi-qualifiers</module>
   </modules>
 </project>
