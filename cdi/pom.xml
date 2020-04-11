@@ -17,6 +17,8 @@
   </parent>
 
   <modules>
+    <module>cdi-events</module>
+    <module>cdi-events-qualifiers</module>
     <module>cdi-first-step</module>
     <module>cdi-injection</module>
     <module>cdi-injection-default</module>
