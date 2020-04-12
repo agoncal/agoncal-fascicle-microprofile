@@ -17,6 +17,7 @@
   </parent>
 
   <modules>
+    <module>jaxrs-exposing</module>
     <module>jaxrs-first-step</module>
   </modules>
 
