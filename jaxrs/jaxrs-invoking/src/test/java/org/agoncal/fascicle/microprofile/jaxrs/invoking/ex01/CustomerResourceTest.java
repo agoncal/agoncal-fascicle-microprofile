@@ -1,11 +1,14 @@
 package org.agoncal.fascicle.microprofile.jaxrs.invoking.ex01;
 
 import io.quarkus.test.junit.QuarkusTest;
+import org.agoncal.fascicle.microprofile.jaxrs.invoking.Customer;
 import org.junit.jupiter.api.Assertions;
+import org.junit.jupiter.api.Disabled;
 import org.junit.jupiter.api.Test;
 
 import javax.ws.rs.client.Client;
 import javax.ws.rs.client.ClientBuilder;
+import javax.ws.rs.client.Entity;
 import javax.ws.rs.client.Invocation;
 import javax.ws.rs.client.WebTarget;
 import javax.ws.rs.core.MediaType;
@@ -71,5 +74,19 @@ public class CustomerResourceTest {
     Response response = ClientBuilder.newClient().target("http://localhost:8081/customers").request(MediaType.TEXT_PLAIN).get();
 // end::adoconeline[]
     Assertions.assertEquals(200, response.getStatus());
+  }
+
+  @Test
+  @Disabled // TODO
+  public void shouldCreateCustomerCustom() {
+// tag::adocclientprop[]
+    Client client = ClientBuilder.newClient();
+    client.property("MyProperty", 1234).register(CustomCustomerWriter.class);
+// end::adocclientprop[]
+    WebTarget target = client.target("http://localhost:9998/customers");
+    Invocation invocation = target.request().buildPost(Entity.entity(new Customer("5678", "John", "Smith"), "custom/format"));
+    Response response = invocation.invoke();
+    Assertions.assertEquals(201, response.getStatus());
+    Assertions.assertTrue(response.getLocation().toString().endsWith("/customer/5678"));
   }
 }
