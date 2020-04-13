@@ -19,6 +19,7 @@
   <modules>
     <module>jaxrs-exposing</module>
     <module>jaxrs-first-step</module>
+    <module>jaxrs-invoking</module>
   </modules>
 
 </project>
