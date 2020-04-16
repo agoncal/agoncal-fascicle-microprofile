@@ -17,6 +17,7 @@
   </parent>
 
   <modules>
+    <module>jsonb-binding</module>
     <module>jsonb-first-step</module>
   </modules>
 </project>
