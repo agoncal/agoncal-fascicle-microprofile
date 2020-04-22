@@ -17,7 +17,7 @@ public class NumberResourceHealthCheck implements HealthCheck {
 
   @Override
   public HealthCheckResponse call() {
-    numberResource.generateBookNumber();
+    numberResource.generateIsbnNumbers();
     return HealthCheckResponse.named("Ping Number REST Endpoint").up().build();
   }
 }
