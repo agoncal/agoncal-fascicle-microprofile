@@ -2,6 +2,8 @@
 package org.agoncal.fascicle.quarkus.book.client;
 
 import io.quarkus.test.Mock;
+import org.agoncal.fascicle.quarkus.book.IsbnNumbers;
+import org.agoncal.fascicle.quarkus.book.IsbnNumbersService;
 import org.eclipse.microprofile.rest.client.inject.RestClient;
 
 import javax.enterprise.context.ApplicationScoped;

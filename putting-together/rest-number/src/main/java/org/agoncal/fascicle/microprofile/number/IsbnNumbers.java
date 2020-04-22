@@ -4,6 +4,7 @@ import org.eclipse.microprofile.openapi.annotations.media.Schema;
 
 import javax.json.bind.annotation.JsonbProperty;
 
+// tag::adocSnippet[]
 @Schema(description = "Several formats of book ISBN numbers")
 public class IsbnNumbers {
 
@@ -14,6 +15,7 @@ public class IsbnNumbers {
   @JsonbProperty("isbn_13")
   private String isbn13;
 
+  // tag::adocSkip[]
   public String getIsbn10() {
     return isbn10;
   }
@@ -41,4 +43,6 @@ public class IsbnNumbers {
       ", isbn13='" + isbn13 + '\'' +
       '}';
   }
+  // end::adocSkip[]
 }
+// end::adocSnippet[]

@@ -1,8 +1,6 @@
 package org.agoncal.fascicle.quarkus.book;
 
 import com.github.javafaker.Faker;
-import org.agoncal.fascicle.quarkus.book.client.IsbnNumbers;
-import org.agoncal.fascicle.quarkus.book.client.IsbnNumbersService;
 import org.eclipse.microprofile.faulttolerance.Fallback;
 import org.eclipse.microprofile.rest.client.inject.RestClient;
 

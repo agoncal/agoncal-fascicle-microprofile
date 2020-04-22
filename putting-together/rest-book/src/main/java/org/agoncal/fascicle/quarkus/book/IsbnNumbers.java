@@ -1,4 +1,4 @@
-package org.agoncal.fascicle.quarkus.book.client;
+package org.agoncal.fascicle.quarkus.book;
 
 import javax.json.bind.annotation.JsonbProperty;
 
