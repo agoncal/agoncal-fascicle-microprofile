@@ -14,9 +14,7 @@ import static javax.ws.rs.core.Response.Status.OK;
 import static org.hamcrest.Matchers.hasKey;
 
 //@formatter:off
-// tag::adocHeader[]
 @QuarkusTest
-@TestMethodOrder(MethodOrderer.OrderAnnotation.class)
 public class BookResourceTest {
 
   @Test

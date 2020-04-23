@@ -71,7 +71,7 @@ public class NumberResourceTest {
     when()
       .get("/metrics/application").
     then()
-      .statusCode(OK.getStatusCode());
+      .statusCode(NOT_FOUND.getStatusCode());
   }
 
   @Test
