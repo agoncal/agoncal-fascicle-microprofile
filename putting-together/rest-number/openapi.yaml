@@ -1,4 +1,3 @@
----
 openapi: 3.0.1
 info:
   title: Number API
@@ -14,7 +13,7 @@ tags:
 - name: api
   description: Public API that can be used by anybody
 - name: numbers
-  description: Anybody interested in numbers
+  description: Anybody interested in ISBN numbers
 paths:
   /api/numbers:
     get:
