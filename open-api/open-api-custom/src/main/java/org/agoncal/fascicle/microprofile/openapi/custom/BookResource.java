@@ -70,7 +70,7 @@ public class BookResource {
 
   @Operation(summary = "Returns a book for a given identifier")
   @APIResponse(responseCode = "200", content = @Content(mediaType = APPLICATION_JSON, schema = @Schema(implementation = Book.class)))
-  @APIResponse(responseCode = "404", description = "The book is not found for a given identifier")
+  @APIResponse(responseCode = "404", description = "The book is not found for the given identifier")
   // tag::adocParameter[]
   @GET
   @Path("/{id}")
