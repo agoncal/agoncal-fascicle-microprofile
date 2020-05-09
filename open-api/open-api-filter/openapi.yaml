@@ -23,8 +23,6 @@ paths:
                 $ref: '#/components/schemas/Book'
 components:
   schemas:
-    BigDecimal:
-      type: number
     Book:
       type: object
       properties:
@@ -33,7 +31,5 @@ components:
           type: integer
         isbn:
           type: string
-        price:
-          $ref: '#/components/schemas/BigDecimal'
         title:
           type: string
