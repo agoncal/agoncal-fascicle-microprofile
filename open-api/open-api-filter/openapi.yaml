@@ -1,0 +1,39 @@
+openapi: 3.0.1
+info:
+  title: Generated API
+  version: "1.0"
+paths:
+  /api/books/{id}:
+    get:
+      summary: Returns a book for a given identifier
+      parameters:
+        - name: id
+          in: path
+          description: Book identifier
+          required: true
+          schema:
+            format: int64
+            type: integer
+      responses:
+        "200":
+          description: OK
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Book'
+components:
+  schemas:
+    BigDecimal:
+      type: number
+    Book:
+      type: object
+      properties:
+        id:
+          format: int64
+          type: integer
+        isbn:
+          type: string
+        price:
+          $ref: '#/components/schemas/BigDecimal'
+        title:
+          type: string
