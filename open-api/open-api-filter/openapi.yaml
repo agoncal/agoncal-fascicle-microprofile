@@ -5,15 +5,7 @@ info:
 paths:
   /api/books/{id}:
     get:
-      summary: Returns a book for a given identifier
-      parameters:
-        - name: id
-          in: path
-          description: Book identifier
-          required: true
-          schema:
-            format: int64
-            type: integer
+      summary: Returns a random book
       responses:
         "200":
           description: OK
