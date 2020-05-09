@@ -26,9 +26,6 @@ components:
     Book:
       type: object
       properties:
-        id:
-          format: int64
-          type: integer
         isbn:
           type: string
         title:

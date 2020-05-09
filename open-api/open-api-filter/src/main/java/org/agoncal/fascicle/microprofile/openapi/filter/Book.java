@@ -1,10 +1,10 @@
 package org.agoncal.fascicle.microprofile.openapi.filter;
 
-// tag::adocSchema[]
+// tag::adocSnippet[]
 public class Book {
 
   public Long id;
   public String title;
   public String isbn;
 }
-// end::adocSchema[]
+// end::adocSnippet[]
