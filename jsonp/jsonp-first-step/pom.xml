@@ -3,22 +3,18 @@
     xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
   <modelVersion>4.0.0</modelVersion>
 
-  <groupId>org.agoncal.fascicle.microprofile.jsonb</groupId>
-  <artifactId>jsonb-first-step</artifactId>
+  <groupId>org.agoncal.fascicle.microprofile.jsonp</groupId>
+  <artifactId>jsonp-first-step</artifactId>
   <version>1.0</version>
-  <name>MicroProfile :: JSON-B :: First Step</name>
+  <name>MicroProfile :: JSON-P :: First Step</name>
 
   <parent>
     <groupId>org.agoncal.fascicle.microprofile</groupId>
-    <artifactId>jsonb</artifactId>
+    <artifactId>jsonp</artifactId>
     <version>1.0</version>
   </parent>
 
   <dependencies>
-<!--    <dependency>-->
-<!--      <groupId>io.quarkus</groupId>-->
-<!--      <artifactId>quarkus-resteasy</artifactId>-->
-<!--    </dependency>-->
     <dependency>
       <groupId>io.quarkus</groupId>
       <artifactId>quarkus-resteasy-jsonb</artifactId>

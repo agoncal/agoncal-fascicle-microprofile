@@ -1,0 +1,9 @@
+// tag::adocShouldBuildAnAuthor[]
+
+{
+  "first_name": "Adams",
+  "last_name": "Douglas",
+  "email": "adams@douglas.com",
+  "dateOfBirth": "1952-03-11"
+}
+// end::adocShouldBuildAnAuthor[]

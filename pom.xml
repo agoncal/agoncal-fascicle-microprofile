@@ -37,6 +37,7 @@
     <quarkus-plugin.version>1.3.2.Final</quarkus-plugin.version>
     <quarkus.platform.version>1.3.2.Final</quarkus.platform.version>
     <!-- Other -->
+    <jsonpath.version>2.4.0</jsonpath.version>
     <!-- Test -->
     <!-- Core Maven Plugins -->
     <version.antrun.plugin>1.8</version.antrun.plugin>
@@ -98,7 +99,11 @@
 
       <!-- tag::adocSkip[] -->
       <!-- Other -->
-
+      <dependency>
+        <groupId>com.jayway.jsonpath</groupId>
+        <artifactId>json-path</artifactId>
+        <version>${jsonpath.version}</version>
+      </dependency>
       <!-- Test -->
       <!-- end::adocSkip[] -->
     </dependencies>

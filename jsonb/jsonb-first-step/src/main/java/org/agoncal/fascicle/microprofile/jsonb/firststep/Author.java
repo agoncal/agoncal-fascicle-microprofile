@@ -1,6 +1,5 @@
 package org.agoncal.fascicle.microprofile.jsonb.firststep;
 
-import javax.inject.Singleton;
 import javax.json.bind.annotation.JsonbDateFormat;
 import javax.json.bind.annotation.JsonbProperty;
 import javax.json.bind.annotation.JsonbTransient;
@@ -11,7 +10,6 @@ import java.time.LocalDate;
  * http://www.antoniogoncalves.org
  * --
  */
-@Singleton
 // tag::adocSnippet[]
 public class Author {
 
