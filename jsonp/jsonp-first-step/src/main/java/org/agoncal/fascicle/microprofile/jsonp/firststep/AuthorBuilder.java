@@ -9,9 +9,9 @@ import java.time.LocalDate;
  * http://www.antoniogoncalves.org
  * --
  */
-// tag::adocSnippet[]
 public class AuthorBuilder {
 
+  // tag::adocSnippet[]
   public JsonObject buildAuthor() {
     return Json.createObjectBuilder()
       .add("first_name", "Adams")
@@ -20,5 +20,5 @@ public class AuthorBuilder {
       .add("dateOfBirth", LocalDate.of(1952, 03, 11).toString())
       .build();
   }
+  // end::adocSnippet[]
 }
-// end::adocSnippet[]
