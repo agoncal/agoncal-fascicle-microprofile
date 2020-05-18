@@ -17,6 +17,7 @@
   </parent>
 
   <modules>
+    <module>jsonb-advanced</module>
     <module>jsonb-default</module>
     <module>jsonb-custom</module>
     <module>jsonb-first-step</module>

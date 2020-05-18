@@ -1,4 +1,4 @@
-package org.agoncal.fascicle.microprofile.jsonb.binding;
+package org.agoncal.fascicle.microprofile.jsonb.dflt;
 
 import org.junit.jupiter.api.AfterAll;
 import org.junit.jupiter.api.BeforeAll;
@@ -12,9 +12,9 @@ import java.io.FileNotFoundException;
 import java.io.IOException;
 import java.time.LocalDate;
 
-import static org.agoncal.fascicle.microprofile.jsonb.binding.UtilTest.initBufferedWriter;
-import static org.agoncal.fascicle.microprofile.jsonb.binding.UtilTest.jsonPath;
-import static org.agoncal.fascicle.microprofile.jsonb.binding.UtilTest.output;
+import static org.agoncal.fascicle.microprofile.jsonb.dflt.UtilTest.initBufferedWriter;
+import static org.agoncal.fascicle.microprofile.jsonb.dflt.UtilTest.jsonPath;
+import static org.agoncal.fascicle.microprofile.jsonb.dflt.UtilTest.output;
 import static org.junit.jupiter.api.Assertions.assertEquals;
 
 /**
@@ -36,7 +36,7 @@ public class BookTest {
 
   @BeforeAll
   static void initFile() throws FileNotFoundException {
-    bw = initBufferedWriter("src/main/java/org/agoncal/fascicle/microprofile/jsonb/binding/Book.json");
+    bw = initBufferedWriter("src/main/java/org/agoncal/fascicle/microprofile/jsonb/dflt/Book.json");
   }
 
   @AfterAll

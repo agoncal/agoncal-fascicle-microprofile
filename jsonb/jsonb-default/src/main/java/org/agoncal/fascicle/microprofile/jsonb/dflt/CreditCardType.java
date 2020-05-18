@@ -1,4 +1,4 @@
-package org.agoncal.fascicle.microprofile.jsonb.binding;
+package org.agoncal.fascicle.microprofile.jsonb.dflt;
 
 /**
  * @author Antonio Goncalves

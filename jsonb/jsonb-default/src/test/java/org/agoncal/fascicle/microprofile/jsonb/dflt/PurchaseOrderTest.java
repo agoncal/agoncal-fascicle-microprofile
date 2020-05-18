@@ -1,4 +1,4 @@
-package org.agoncal.fascicle.microprofile.jsonb.binding;
+package org.agoncal.fascicle.microprofile.jsonb.dflt;
 
 import org.junit.jupiter.api.AfterAll;
 import org.junit.jupiter.api.BeforeAll;
@@ -16,9 +16,9 @@ import java.io.IOException;
 import java.io.StringReader;
 import java.time.LocalDate;
 
-import static org.agoncal.fascicle.microprofile.jsonb.binding.CreditCardType.VISA;
-import static org.agoncal.fascicle.microprofile.jsonb.binding.UtilTest.initBufferedWriter;
-import static org.agoncal.fascicle.microprofile.jsonb.binding.UtilTest.output;
+import static org.agoncal.fascicle.microprofile.jsonb.dflt.CreditCardType.VISA;
+import static org.agoncal.fascicle.microprofile.jsonb.dflt.UtilTest.initBufferedWriter;
+import static org.agoncal.fascicle.microprofile.jsonb.dflt.UtilTest.output;
 import static org.junit.jupiter.api.Assertions.assertEquals;
 
 /**
@@ -42,7 +42,7 @@ public class PurchaseOrderTest {
 
   @BeforeAll
   static void initFile() throws FileNotFoundException {
-    bw = initBufferedWriter("src/main/java/org/agoncal/fascicle/microprofile/jsonb/binding/PurchaseOrder.json");
+    bw = initBufferedWriter("src/main/java/org/agoncal/fascicle/microprofile/jsonb/dflt/PurchaseOrder.json");
   }
 
   @AfterAll
