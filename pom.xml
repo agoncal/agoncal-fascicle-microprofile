@@ -34,8 +34,8 @@
     <!-- MicroProfile -->
     <microprofile.version>3.3</microprofile.version>
     <!-- Quarkus -->
-    <quarkus-plugin.version>1.4.2.Final</quarkus-plugin.version>
-    <quarkus.platform.version>1.4.2.Final</quarkus.platform.version>
+    <quarkus-plugin.version>1.5.0.Final</quarkus-plugin.version>
+    <quarkus.platform.version>1.5.0.Final</quarkus.platform.version>
     <!-- Other -->
     <jsonpath.version>2.4.0</jsonpath.version>
     <!-- Test -->
