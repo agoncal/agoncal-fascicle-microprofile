@@ -1,4 +1,4 @@
-package org.agoncal.fascicle.microprofile.config.injection;
+package org.agoncal.fascicle.quarkus.core.configuration;
 
 import io.quarkus.test.junit.QuarkusTest;
 import org.eclipse.microprofile.config.Config;
@@ -13,24 +13,22 @@ import static org.junit.jupiter.api.Assertions.assertTrue;
 
 // @formatter:off
 @QuarkusTest
-class InvoiceTest {
+class OptionalInvoiceTest {
 
   @Inject
-  Invoice invoice;
+  OptionalInvoice invoice;
 
-  // tag::adocShouldCalculateInvoiceProgrammaticallyInjection[]
   @Inject
   Config config;
 
-  // end::adocShouldCalculateInvoiceProgrammaticallyInjection[]
   @Test
-  public void adocShouldCalculateInvoiceProgrammaticallyInjection() {
-  // tag::adocShouldCalculateInvoiceProgrammaticallyInjection[]
-  invoice.vatRate = config.getValue("invoice.vatRate", Float.class);
-  invoice.allowsDiscount = config.getValue("invoice.allowsDiscount", Boolean.class);
-  invoice.terms = config.getValue("invoice.terms", String.class);
-  invoice.penalties = config.getValue("invoice.penalties", String.class);
-  // end::adocShouldCalculateInvoiceProgrammaticallyInjection[]
+  public void shouldCalculateInvoiceProgrammaticallyOptional() {
+    invoice.vatRate = config.getValue("invoice.vatRate", Float.class);
+    invoice.allowsDiscount = config.getValue("invoice.allowsDiscount", Boolean.class);
+    // tag::adocShouldCalculateInvoiceProgrammaticallyOptional[]
+    invoice.terms = config.getOptionalValue("invoice.terms", String.class);
+    invoice.penalties = config.getOptionalValue("invoice.penalties", String.class);
+    // end::adocShouldCalculateInvoiceProgrammaticallyOptional[]
 
     invoice.subtotal = 500f;
     invoice.vatAmount = invoice.subtotal * (invoice.vatRate / 100);
@@ -39,8 +37,8 @@ class InvoiceTest {
     assertEquals(50f, invoice.vatAmount);
     assertEquals(550f, invoice.total);
     assertFalse(invoice.allowsDiscount);
-    assertTrue(invoice.terms.startsWith("Payment"));
-    assertTrue(invoice.penalties.startsWith("Penalty"));
+    assertTrue(invoice.terms.get().startsWith("Payment"));
+    assertTrue(invoice.penalties.get().startsWith("Penalty"));
   }
 
   @Test
@@ -52,20 +50,17 @@ class InvoiceTest {
     assertEquals(50f, invoice.vatAmount);
     assertEquals(550f, invoice.total);
     assertFalse(invoice.allowsDiscount);
-    assertTrue(invoice.terms.startsWith("Payment"));
-    assertTrue(invoice.penalties.startsWith("Penalty"));
+    assertTrue(invoice.terms.get().startsWith("Payment"));
+    assertTrue(invoice.penalties.get().startsWith("Penalty"));
   }
 
   @Test
   public void shouldCalculateInvoiceProgrammatically() {
-    // tag::adocShouldCalculateInvoiceProgrammatically[]
     Config config = ConfigProvider.getConfig();
-
     invoice.vatRate = config.getValue("invoice.vatRate", Float.class);
     invoice.allowsDiscount = config.getValue("invoice.allowsDiscount", Boolean.class);
-    invoice.terms = config.getValue("invoice.terms", String.class);
-    invoice.penalties = config.getValue("invoice.penalties", String.class);
-    // end::adocShouldCalculateInvoiceProgrammatically[]
+    invoice.terms = config.getOptionalValue("invoice.terms", String.class);
+    invoice.penalties = config.getOptionalValue("invoice.penalties", String.class);
 
     invoice.subtotal = 500f;
     invoice.vatAmount = invoice.subtotal * (invoice.vatRate / 100);
@@ -74,7 +69,7 @@ class InvoiceTest {
     assertEquals(50f, invoice.vatAmount);
     assertEquals(550f, invoice.total);
     assertFalse(invoice.allowsDiscount);
-    assertTrue(invoice.terms.startsWith("Payment"));
-    assertTrue(invoice.penalties.startsWith("Penalty"));
+    assertTrue(invoice.terms.get().startsWith("Payment"));
+    assertTrue(invoice.penalties.get().startsWith("Penalty"));
   }
 }
