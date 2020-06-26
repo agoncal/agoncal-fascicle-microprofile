@@ -5,13 +5,13 @@
 
   <groupId>org.agoncal.fascicle.microprofile.jsonb</groupId>
   <artifactId>jsonb-custom</artifactId>
-  <version>1.0</version>
+  <version>1.0-SNAPSHOT</version>
   <name>MicroProfile :: JSON-B :: Custom Binding</name>
 
   <parent>
     <groupId>org.agoncal.fascicle.microprofile</groupId>
     <artifactId>jsonb</artifactId>
-    <version>1.0</version>
+    <version>1.0-SNAPSHOT</version>
   </parent>
 
   <dependencies>

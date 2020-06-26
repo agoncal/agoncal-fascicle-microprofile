@@ -1,4 +1,4 @@
-package org.agoncal.fascicle.quarkus.core.configuration;
+package org.agoncal.fascicle.microprofile.config.injection;
 
 import io.quarkus.test.junit.QuarkusTest;
 import org.eclipse.microprofile.config.Config;

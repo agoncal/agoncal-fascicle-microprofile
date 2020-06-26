@@ -1,4 +1,4 @@
-package org.agoncal.fascicle.microprofile.openapi.custom;
+package org.agoncal.fascicle.microprofile.openapi.advanced;
 
 import io.quarkus.test.junit.QuarkusTest;
 import org.junit.jupiter.api.Test;

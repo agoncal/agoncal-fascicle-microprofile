@@ -5,13 +5,13 @@
 
   <groupId>org.agoncal.fascicle.microprofile.cdi</groupId>
   <artifactId>cdi-events</artifactId>
-  <version>1.0</version>
+  <version>1.0-SNAPSHOT</version>
   <name>MicroProfile :: CDI :: Events</name>
 
   <parent>
     <groupId>org.agoncal.fascicle.microprofile</groupId>
     <artifactId>cdi</artifactId>
-    <version>1.0</version>
+    <version>1.0-SNAPSHOT</version>
   </parent>
 
   <dependencies>

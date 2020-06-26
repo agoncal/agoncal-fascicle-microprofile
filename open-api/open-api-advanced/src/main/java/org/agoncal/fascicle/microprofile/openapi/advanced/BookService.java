@@ -1,4 +1,4 @@
-package org.agoncal.fascicle.microprofile.openapi.custom;
+package org.agoncal.fascicle.microprofile.openapi.advanced;
 
 import javax.enterprise.context.ApplicationScoped;
 import java.util.List;

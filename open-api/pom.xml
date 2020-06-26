@@ -6,19 +6,19 @@
 
   <groupId>org.agoncal.fascicle.microprofile</groupId>
   <artifactId>open-api</artifactId>
-  <version>1.0</version>
+  <version>1.0-SNAPSHOT</version>
   <packaging>pom</packaging>
   <name>MicroProfile :: OpenAPI</name>
 
   <parent>
     <groupId>org.agoncal.fascicle</groupId>
     <artifactId>microprofile</artifactId>
-    <version>1.0</version>
+    <version>1.0-SNAPSHOT</version>
   </parent>
 
   <modules>
+    <module>open-api-advanced</module>
     <module>open-api-config</module>
-    <module>open-api-custom</module>
     <module>open-api-default</module>
     <module>open-api-filter</module>
     <module>open-api-first-step</module>

@@ -1,4 +1,4 @@
-package org.agoncal.fascicle.microprofile.openapi.custom;
+package org.agoncal.fascicle.microprofile.openapi.advanced;
 
 import org.eclipse.microprofile.openapi.annotations.media.Schema;
 
