@@ -1,7 +1,7 @@
 package org.agoncal.fascicle.microprofile.cdi.qualifiers;
 
 
-import javax.enterprise.context.ApplicationScoped;
+import jakarta.enterprise.context.ApplicationScoped;
 import java.util.Random;
 
 /**

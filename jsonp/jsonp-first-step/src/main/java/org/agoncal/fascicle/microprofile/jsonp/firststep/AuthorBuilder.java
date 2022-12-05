@@ -1,7 +1,7 @@
 package org.agoncal.fascicle.microprofile.jsonp.firststep;
 
-import javax.json.Json;
-import javax.json.JsonObject;
+import jakarta.json.Json;
+import jakarta.json.JsonObject;
 import java.time.LocalDate;
 
 /**

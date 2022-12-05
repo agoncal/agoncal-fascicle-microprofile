@@ -2,10 +2,10 @@ package org.agoncal.fascicle.microprofile.jsonp.firststep;
 
 import com.jayway.jsonpath.JsonPath;
 
-import javax.json.JsonObject;
-import javax.json.bind.Jsonb;
-import javax.json.bind.JsonbBuilder;
-import javax.json.bind.JsonbConfig;
+import jakarta.json.JsonObject;
+import jakarta.json.bind.Jsonb;
+import jakarta.json.bind.JsonbBuilder;
+import jakarta.json.bind.JsonbConfig;
 import java.io.BufferedWriter;
 import java.io.File;
 import java.io.FileNotFoundException;

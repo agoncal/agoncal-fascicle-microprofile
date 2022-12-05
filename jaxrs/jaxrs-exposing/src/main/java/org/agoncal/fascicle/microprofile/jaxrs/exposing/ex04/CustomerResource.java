@@ -3,12 +3,12 @@ package org.agoncal.fascicle.microprofile.jaxrs.exposing.ex04;
 import org.agoncal.fascicle.microprofile.jaxrs.exposing.Customer;
 import org.agoncal.fascicle.microprofile.jaxrs.exposing.Customers;
 
-import javax.ws.rs.Consumes;
-import javax.ws.rs.GET;
-import javax.ws.rs.Path;
-import javax.ws.rs.PathParam;
-import javax.ws.rs.Produces;
-import javax.ws.rs.core.MediaType;
+import jakarta.ws.rs.Consumes;
+import jakarta.ws.rs.GET;
+import jakarta.ws.rs.Path;
+import jakarta.ws.rs.PathParam;
+import jakarta.ws.rs.Produces;
+import jakarta.ws.rs.core.MediaType;
 import java.util.Date;
 import java.util.List;
 

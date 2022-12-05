@@ -1,5 +1,4 @@
-// tag::shouldMarshallAPurchaseOrder[]
-{
+// tag::shouldMarshallAPurchaseOrder[]{
     "content": [
         {
             "item": "H2G2",

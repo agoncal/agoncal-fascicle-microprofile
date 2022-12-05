@@ -1,6 +1,7 @@
 package org.agoncal.fascicle.microprofile.jaxrs.invoking;
 
-import javax.xml.bind.annotation.XmlRootElement;
+import jakarta.xml.bind.annotation.XmlRootElement;
+
 import java.util.Date;
 
 /**

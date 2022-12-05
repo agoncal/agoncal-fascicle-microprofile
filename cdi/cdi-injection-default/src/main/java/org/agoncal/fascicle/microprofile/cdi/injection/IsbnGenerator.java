@@ -1,8 +1,8 @@
 package org.agoncal.fascicle.microprofile.cdi.injection;
 
 
-import javax.enterprise.context.ApplicationScoped;
-import javax.enterprise.inject.Default;
+import jakarta.enterprise.context.ApplicationScoped;
+import jakarta.enterprise.inject.Default;
 import java.util.Random;
 
 /**

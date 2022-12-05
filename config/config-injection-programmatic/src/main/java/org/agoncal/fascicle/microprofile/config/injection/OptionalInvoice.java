@@ -2,7 +2,7 @@ package org.agoncal.fascicle.microprofile.config.injection;
 
 import org.eclipse.microprofile.config.inject.ConfigProperty;
 
-import javax.inject.Singleton;
+import jakarta.inject.Singleton;
 import java.util.Optional;
 
 /**

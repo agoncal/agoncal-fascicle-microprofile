@@ -1,10 +1,10 @@
 package org.agoncal.fascicle.microprofile.health.liveready;
 
+import jakarta.enterprise.context.ApplicationScoped;
 import org.eclipse.microprofile.health.HealthCheck;
 import org.eclipse.microprofile.health.HealthCheckResponse;
 import org.eclipse.microprofile.health.Liveness;
 
-import javax.enterprise.context.ApplicationScoped;
 import java.io.File;
 
 // tag::adocSnippet[]
@@ -21,7 +21,7 @@ public class DiskCheck implements HealthCheck {
     return HealthCheckResponse
       .named(DiskCheck.class.getSimpleName() + "Liveness")
       .withData("remainingSpace", freeSpace)
-      .state(freeSpace > 100)
+      .status(freeSpace > 100)
       .build();
   }
 }

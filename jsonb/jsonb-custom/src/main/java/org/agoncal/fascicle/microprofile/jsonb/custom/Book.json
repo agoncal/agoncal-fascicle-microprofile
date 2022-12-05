@@ -1,5 +1,4 @@
-// tag::shouldMarshallACustomBook[]
-{
+// tag::shouldMarshallACustomBook[]{
     "book_title": "H2G2",
     "illustrations": false,
     "isbn": "1-84023-742-2",

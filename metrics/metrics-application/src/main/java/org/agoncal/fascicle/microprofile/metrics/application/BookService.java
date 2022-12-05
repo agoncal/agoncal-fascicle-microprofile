@@ -1,6 +1,6 @@
 package org.agoncal.fascicle.microprofile.metrics.application;
 
-import javax.enterprise.context.ApplicationScoped;
+import jakarta.enterprise.context.ApplicationScoped;
 import java.util.List;
 import java.util.Optional;
 import java.util.Random;

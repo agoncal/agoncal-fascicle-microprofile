@@ -1,5 +1,4 @@
-// tag::shouldMarshallADefaultBook[]
-{
+// tag::shouldMarshallADefaultBook[]{
     "description": "Best Sci-fi book ever",
     "illustrations": false,
     "isbn": "1-84023-742-2",

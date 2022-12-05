@@ -2,8 +2,8 @@ package org.agoncal.fascicle.microprofile.config.injection;
 
 import org.eclipse.microprofile.config.inject.ConfigProperty;
 
-import javax.inject.Inject;
-import javax.inject.Singleton;
+import jakarta.inject.Inject;
+import jakarta.inject.Singleton;
 
 /**
  * @author Antonio Goncalves

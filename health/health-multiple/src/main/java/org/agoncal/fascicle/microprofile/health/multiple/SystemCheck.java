@@ -5,7 +5,7 @@ import org.eclipse.microprofile.health.HealthCheckResponse;
 import org.eclipse.microprofile.health.Liveness;
 import org.eclipse.microprofile.health.Readiness;
 
-import javax.enterprise.context.ApplicationScoped;
+import jakarta.enterprise.context.ApplicationScoped;
 import java.lang.management.ManagementFactory;
 import java.lang.management.MemoryMXBean;
 
@@ -25,7 +25,7 @@ public class SystemCheck implements HealthCheck {
       .named(SystemCheck.class.getSimpleName())
       .withData("memory used", memUsed)
       .withData("memory max", memMax)
-      .state(memUsed < memMax * 0.9).build();
+      .status(memUsed < memMax * 0.9).build();
   }
 }
 // end::adocSnippet[]

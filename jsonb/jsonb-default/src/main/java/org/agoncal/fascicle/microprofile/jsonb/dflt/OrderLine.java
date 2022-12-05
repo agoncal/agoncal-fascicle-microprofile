@@ -1,6 +1,6 @@
 package org.agoncal.fascicle.microprofile.jsonb.dflt;
 
-import javax.json.bind.annotation.JsonbProperty;
+import jakarta.json.bind.annotation.JsonbProperty;
 
 /**
  * @author Antonio Goncalves
