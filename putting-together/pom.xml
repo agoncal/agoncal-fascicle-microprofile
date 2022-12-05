@@ -6,13 +6,28 @@
 
   <groupId>org.agoncal.fascicle.microprofile</groupId>
   <artifactId>putting-together</artifactId>
-  <version>1.0</version>
+  <version>1.0-SNAPSHOT</version>
   <packaging>pom</packaging>
   <name>MicroProfile :: Putting It All Together</name>
 
   <parent>
     <groupId>org.agoncal.fascicle</groupId>
     <artifactId>microprofile</artifactId>
-    <version>1.0</version>
+    <version>1.0-SNAPSHOT</version>
   </parent>
+
+  <modules>
+    <module>rest-book</module>
+    <module>rest-number</module>
+  </modules>
+
+  <dependencyManagement>
+    <dependencies>
+      <dependency>
+        <groupId>com.github.javafaker</groupId>
+        <artifactId>javafaker</artifactId>
+        <version>1.0.2</version>
+      </dependency>
+    </dependencies>
+  </dependencyManagement>
 </project>

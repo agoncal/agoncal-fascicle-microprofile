@@ -1,0 +1,24 @@
+openapi: 3.0.1
+info:
+  title: Generated API
+  version: "1.0"
+paths:
+  /api/books/{id}:
+    get:
+      summary: Returns a random book
+      responses:
+        "200":
+          description: OK
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Book'
+components:
+  schemas:
+    Book:
+      type: object
+      properties:
+        isbn:
+          type: string
+        title:
+          type: string

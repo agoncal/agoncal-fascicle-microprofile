@@ -1,0 +1,21 @@
+{
+  "status": "UP",
+  "checks": [
+    {
+      "name": "SystemCheck",
+      "status": "UP",
+      "data": {
+        "memory used": 126113344,
+        "memory max": 4294967296
+      }
+    },
+    {
+      "name": "SystemCheck",
+      "status": "UP",
+      "data": {
+        "memory used": 126113344,
+        "memory max": 4294967296
+      }
+    }
+  ]
+}

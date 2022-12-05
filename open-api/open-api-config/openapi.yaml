@@ -1,0 +1,26 @@
+# tag::adocSnippet[]
+openapi: 3.0.1
+info:
+  title: Generated API
+  version: "1.0"
+servers:
+- url: https://api.cdbookstore.com/v1
+# end::adocSnippet[]
+paths:
+  /authors/{index}:
+    get:
+      parameters:
+      - name: index
+        in: path
+        description: Author index
+        required: true
+        schema:
+          format: int32
+          type: integer
+      responses:
+        "200":
+          description: OK
+          content:
+            text/plain:
+              schema:
+                type: string

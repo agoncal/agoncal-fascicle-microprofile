@@ -5,25 +5,39 @@
 
   <groupId>org.agoncal.fascicle</groupId>
   <artifactId>microprofile</artifactId>
-  <version>1.0</version>
+  <version>1.0-SNAPSHOT</version>
   <packaging>pom</packaging>
   <name>MicroProfile</name>
 
   <modules>
     <module>advanced</module>
+    <module>cdi</module>
+    <module>config</module>
+    <module>fault-tolerance</module>
     <module>first-step</module>
     <module>getting-started</module>
+    <module>health</module>
     <module>integrating</module>
+    <module>jaxrs</module>
+    <module>jsonb</module>
+    <module>jsonp</module>
+    <module>jwt</module>
+    <module>metrics</module>
+    <module>open-api</module>
     <module>putting-together</module>
+    <module>rest-client</module>
     <module>understanding</module>
   </modules>
 
   <properties>
     <version.java>1.8</version.java>
+    <!-- MicroProfile -->
+    <microprofile.version>3.3</microprofile.version>
     <!-- Quarkus -->
-    <quarkus-plugin.version>1.3.1.Final</quarkus-plugin.version>
-    <quarkus.platform.version>1.3.1.Final</quarkus.platform.version>
+    <quarkus-plugin.version>1.5.2.Final</quarkus-plugin.version>
+    <quarkus.platform.version>1.5.2.Final</quarkus.platform.version>
     <!-- Other -->
+    <jsonpath.version>2.4.0</jsonpath.version>
     <!-- Test -->
     <!-- Core Maven Plugins -->
     <version.antrun.plugin>1.8</version.antrun.plugin>
@@ -75,9 +89,16 @@
         <type>pom</type>
         <scope>import</scope>
       </dependency>
+      <dependency>
+        <groupId>org.eclipse.microprofile</groupId>
+        <artifactId>microprofile</artifactId>
+        <version>${microprofile.version}</version>
+        <type>pom</type>
+        <scope>provided</scope>
+      </dependency>
+
       <!-- tag::adocSkip[] -->
       <!-- Other -->
-
       <!-- Test -->
       <!-- end::adocSkip[] -->
     </dependencies>
