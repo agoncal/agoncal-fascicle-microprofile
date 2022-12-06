@@ -18,6 +18,7 @@
     <module>getting-started</module>
     <module>health</module>
     <module>integrating</module>
+    <module>interceptors</module>
     <module>jaxrs</module>
     <module>jsonb</module>
     <module>jsonp</module>
