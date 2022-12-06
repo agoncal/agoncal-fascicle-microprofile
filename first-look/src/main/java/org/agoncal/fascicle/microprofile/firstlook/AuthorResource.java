@@ -1,4 +1,4 @@
-package org.agoncal.fascicle.quarkus.firstlook;
+package org.agoncal.fascicle.microprofile.firstlook;
 
 
 import jakarta.ws.rs.GET;

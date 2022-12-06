@@ -1,4 +1,4 @@
-package org.agoncal.fascicle.quarkus.gettingstarted;
+package org.agoncal.fascicle.microprofile.gettingstarted;
 
 import java.util.Objects;
 import java.util.UUID;

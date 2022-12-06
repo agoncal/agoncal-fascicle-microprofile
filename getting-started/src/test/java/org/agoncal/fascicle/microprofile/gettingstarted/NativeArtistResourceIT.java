@@ -1,4 +1,4 @@
-package org.agoncal.fascicle.quarkus.gettingstarted;
+package org.agoncal.fascicle.microprofile.gettingstarted;
 
 import io.quarkus.test.junit.NativeImageTest;
 
