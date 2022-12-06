@@ -20,6 +20,6 @@
     <module>jsonb-advanced</module>
     <module>jsonb-default</module>
     <module>jsonb-custom</module>
-    <module>jsonb-first-step</module>
+    <module>jsonb-first-look</module>
   </modules>
 </project>

@@ -17,7 +17,7 @@
   </parent>
 
   <modules>
-    <module>config-first-step</module>
+    <module>config-first-look</module>
     <module>config-injection-programmatic</module>
   </modules>
 

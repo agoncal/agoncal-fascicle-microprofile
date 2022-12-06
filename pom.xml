@@ -14,7 +14,7 @@
     <module>cdi</module>
     <module>config</module>
     <module>fault-tolerance</module>
-    <module>first-step</module>
+    <module>first-look</module>
     <module>getting-started</module>
     <module>health</module>
     <module>integrating</module>

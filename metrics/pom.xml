@@ -18,7 +18,7 @@
 
   <modules>
     <module>metrics-application</module>
-    <module>metrics-first-step</module>
+    <module>metrics-first-look</module>
   </modules>
 
 </project>

@@ -17,7 +17,7 @@
   </parent>
 
   <modules>
-    <module>jwt-first-step</module>
+    <module>jwt-first-look</module>
   </modules>
 
 </project>

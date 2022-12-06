@@ -17,7 +17,7 @@
   </parent>
 
   <modules>
-    <module>health-first-step</module>
+    <module>health-first-look</module>
     <module>health-live-ready</module>
     <module>health-multiple</module>
   </modules>

@@ -17,7 +17,7 @@
   </parent>
 
   <modules>
-    <module>jsonp-first-step</module>
+    <module>jsonp-first-look</module>
   </modules>
 
 </project>

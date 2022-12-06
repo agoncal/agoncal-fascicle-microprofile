@@ -21,7 +21,7 @@
     <module>open-api-config</module>
     <module>open-api-default</module>
     <module>open-api-filter</module>
-    <module>open-api-first-step</module>
+    <module>open-api-first-look</module>
   </modules>
 
 </project>
