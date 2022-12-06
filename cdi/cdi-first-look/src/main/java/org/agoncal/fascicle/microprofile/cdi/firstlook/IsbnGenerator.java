@@ -1,4 +1,4 @@
-package org.agoncal.fascicle.microprofile.cdi.firststep;
+package org.agoncal.fascicle.microprofile.cdi.firstlook;
 
 
 import jakarta.enterprise.context.ApplicationScoped;

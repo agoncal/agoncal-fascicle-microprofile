@@ -1,4 +1,4 @@
-package org.agoncal.fascicle.microprofile.cdi.firststep;
+package org.agoncal.fascicle.microprofile.cdi.firstlook;
 
 /**
  * @author Antonio Goncalves

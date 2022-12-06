@@ -1,4 +1,4 @@
-package org.agoncal.fascicle.microprofile.cdi.firststep;
+package org.agoncal.fascicle.microprofile.cdi.firstlook;
 
 import io.quarkus.test.junit.QuarkusTest;
 import org.junit.jupiter.api.Test;
