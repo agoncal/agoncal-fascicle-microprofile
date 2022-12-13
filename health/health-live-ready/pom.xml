@@ -5,13 +5,13 @@
 
   <groupId>org.agoncal.fascicle.microprofile.health</groupId>
   <artifactId>health-live-ready</artifactId>
-  <version>1.0-SNAPSHOT</version>
+  <version>6.0-SNAPSHOT</version>
   <name>MicroProfile :: Health :: Live and Ready</name>
 
   <parent>
     <groupId>org.agoncal.fascicle.microprofile</groupId>
     <artifactId>health</artifactId>
-    <version>1.0-SNAPSHOT</version>
+    <version>6.0-SNAPSHOT</version>
   </parent>
 
   <dependencies>

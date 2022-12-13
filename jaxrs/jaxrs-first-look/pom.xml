@@ -5,13 +5,13 @@
 
   <groupId>org.agoncal.fascicle.microprofile.jaxrs</groupId>
   <artifactId>jaxrs-first-step</artifactId>
-  <version>1.0-SNAPSHOT</version>
+  <version>6.0-SNAPSHOT</version>
   <name>MicroProfile :: JAX-RS :: First Step</name>
 
   <parent>
     <groupId>org.agoncal.fascicle.microprofile</groupId>
     <artifactId>jaxrs</artifactId>
-    <version>1.0-SNAPSHOT</version>
+    <version>6.0-SNAPSHOT</version>
   </parent>
 
   <dependencies>
