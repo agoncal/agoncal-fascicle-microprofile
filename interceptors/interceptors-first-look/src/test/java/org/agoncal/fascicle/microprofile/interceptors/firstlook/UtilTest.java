@@ -1,4 +1,4 @@
-package org.agoncal.fascicle.microprofile.jsonp.firstlook;
+package org.agoncal.fascicle.microprofile.interceptors.firstlook;
 
 import com.jayway.jsonpath.JsonPath;
 

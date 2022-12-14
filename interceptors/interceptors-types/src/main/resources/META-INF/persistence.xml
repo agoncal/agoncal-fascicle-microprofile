@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<persistence xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+             xmlns="https://jakarta.ee/xml/ns/persistence"
+             xsi:schemaLocation="https://jakarta.ee/xml/ns/persistence https://jakarta.ee/xml/ns/persistence/persistence_3_1.xsd"
+             version="3.1">
+
+  <persistence-unit name="cdiPU" transaction-type="RESOURCE_LOCAL">
+    <class>oorg.agoncal.fascicle.microprofile.interceptors.types.Customer</class>
+    <properties>
+      <property name="jakarta.persistence.schema-generation.database.action" value="drop-and-create"/>
+      <property name="jakarta.persistence.jdbc.driver" value="org.apache.derby.jdbc.EmbeddedDriver"/>
+      <property name="jakarta.persistence.jdbc.url" value="jdbc:derby:memory:cdiDB;create=true"/>
+    </properties>
+  </persistence-unit>
+
+</persistence>

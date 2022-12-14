@@ -4,9 +4,9 @@
   <modelVersion>4.0.0</modelVersion>
 
   <groupId>org.agoncal.fascicle.microprofile.interceptors</groupId>
-  <artifactId>interceptors-first-look</artifactId>
+  <artifactId>interceptors-types</artifactId>
   <version>6.0-SNAPSHOT</version>
-  <name>MicroProfile :: Interceptors :: First Look</name>
+  <name>MicroProfile :: Interceptors :: Types</name>
 
   <parent>
     <groupId>org.agoncal.fascicle.microprofile</groupId>
@@ -19,6 +19,12 @@
       <groupId>io.quarkus</groupId>
       <artifactId>quarkus-resteasy-jsonb</artifactId>
     </dependency>
+    <dependency>
+      <groupId>jakarta.persistence</groupId>
+      <artifactId>jakarta.persistence-api</artifactId>
+      <version>3.1.0</version>
+    </dependency>
+
     <!-- Test -->
     <dependency>
       <groupId>io.quarkus</groupId>

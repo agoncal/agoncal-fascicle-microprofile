@@ -18,6 +18,7 @@
 
   <modules>
     <module>interceptors-first-look</module>
+    <module>interceptors-types</module>
   </modules>
 
 </project>

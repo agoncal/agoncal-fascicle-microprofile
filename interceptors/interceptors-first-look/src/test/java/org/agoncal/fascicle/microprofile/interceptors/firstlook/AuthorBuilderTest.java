@@ -1,4 +1,4 @@
-package org.agoncal.fascicle.microprofile.jsonp.firstlook;
+package org.agoncal.fascicle.microprofile.interceptors.firstlook;
 
 import io.quarkus.test.junit.QuarkusTest;
 import org.junit.jupiter.api.AfterAll;
@@ -13,8 +13,6 @@ import java.io.BufferedWriter;
 import java.io.FileNotFoundException;
 import java.io.IOException;
 
-import static org.agoncal.fascicle.microprofile.jsonp.firstlook.UtilTest.initBufferedWriter;
-import static org.agoncal.fascicle.microprofile.jsonp.firstlook.UtilTest.output;
 import static org.junit.jupiter.api.Assertions.assertEquals;
 
 /**
@@ -39,7 +37,7 @@ public class AuthorBuilderTest {
 
   @BeforeAll
   static void initFile() throws FileNotFoundException {
-    bw = initBufferedWriter("src/main/java/org/agoncal/fascicle/microprofile/jsonp/firststep/Author.json");
+    bw = UtilTest.initBufferedWriter("src/main/java/org/agoncal/fascicle/microprofile/jsonp/firststep/Author.json");
   }
 
   @AfterAll
@@ -56,7 +54,7 @@ public class AuthorBuilderTest {
 
     JsonObject jsonObject = new AuthorBuilder().buildAuthor();
 
-    output(bw, jsonObject, "adocShouldBuildAnAuthor");
+    UtilTest.output(bw, jsonObject, "adocShouldBuildAnAuthor");
 
     // tag::adocSnippet[]
     assertEquals("Adams", jsonObject.getString("first_name"));
